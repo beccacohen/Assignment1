@@ -24,11 +24,6 @@
 						</li>
 
 						<li>
-							<label for="address">Address:</label>
-							<input type="text" id="address" name="address">
-						</li>
-
-						<li>
 							<label for="phone">Phone:</label>
 							<input type="tel" id="phone" name="phone">
 						</li>
@@ -38,15 +33,22 @@
 							<input type="email" id="email" name="email">
 						</li>
 
-						<li>
-							<label for="birthday">Birthday:</label>
-							<input type="date" id="birthday" name="birthday">
-						</li>
+            <li>
+              <label class="description">How would you like to be contacted?</label>
+              <span>
+                <div class="radio">
+                  <input class="rphone" type="radio" name="contactPreferences[]" value="Phone">Phone<br>
+                  <input class="remail" type="radio" name="contactPreferences[]" value="Email">Email<br>
+                  <input class="rboth" type="radio" name="contactPreferences[]" value="Email and Phone">Both<br>
+                </div>
+              </span>
+            </li>
 
-						<li>
-							<label for="website">Website:</label>
-							<input type="url" id="website" name="website">
-						</li>
+            <li id="comments">
+              <label class="description" for="comments">Do you have any comments you would like to leave?</label>
+              <textarea id="comments" name="comments" rows="6" cols="50"></textarea>
+            </li>
+
 					</ul>
 				</fieldset>
 
@@ -54,23 +56,28 @@
 					<legend>Other information:</legend>
 						<ul>
 							<li>
-								<label for="fav-show">Do you like The Office?</label>
-								<select id="fav-show" name="fav-show">
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-									<option value="Never Watched">Never Watched it</option>
+								<label for="fav-pizza">What kind of pizza do you like?</label>
+								<select id="fav-pizza" name="fav-pizza">
+                  <option value="Select">Select</option>
+									<option value="Plain">Plain</option>
+									<option value="Pepperoni">Pepperoni</option>
+									<option value="Pineapple">Pineapple</option>
 								</select>
 							</li>
 
 							<li>
-								<label for="password">What is the secret password?</label>
+								<label for="password">Hello is the secret password?</label>
 								<input type="password" id="password" name="password" >
 							</li>
 						</ul>
 				</fieldset>
 
-				<input type="submit" value="Submit" >
+				<input class="submit" type="submit" value="Submit" >
 			</form>
 		</div>
 	</body>
+
+  <footer>
+  <p>Created by Rebecca Cohen</p>
+  </footer>
 </html>
