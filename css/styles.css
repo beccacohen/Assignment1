@@ -1,0 +1,94 @@
+/*============================
+
+Universal Styling
+
+============================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  color: #234058;
+}
+
+.container {
+  color: #234058;
+  overflow-x: hidden;
+  max-width: 1280px;
+  background: #f9bba5;
+}
+
+main {
+margin: 1% 0%;
+}
+
+h1, h2, legend {
+  font-family: 'Raleway', sans-serif;
+  padding: 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p, ul, li {
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+input {
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+}
+/*========================================
+
+
+  Form Styling
+
+
+===========================================*/
+.contact-form {
+  background: #86a3a9;
+  padding: 20px;
+  color: #234058;
+  font-family: 'Raleway', sans-serif;
+}
+
+.label_input_wrap {
+  display: block;
+  font-weight: bold;
+}
+
+.submit input {
+  background: #f9bba5;
+  padding: 6px 30px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #234058;
+}
+
+.spacing {
+  margin-bottom: 5px;
+}
+
+input {
+padding: 5px 20px;
+border-radius: 4px;
+font-family: 'Oswald', sans-serif;
+text-align: left;
+font-size: 10px;
+}
+
+textarea {
+  font-family: 'Oswald', sans-serif;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.links {
+  display: inline-block;
+  float: right;
+  padding-right: 388px;
+  padding-top: 50px;
+}
