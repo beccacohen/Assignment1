@@ -58,12 +58,20 @@
 							<li>
 								<label for="fav-pizza">What kind of pizza do you like?</label>
 								<select id="fav-pizza" name="fav-pizza">
-                  <option value="Select">Select</option>
 									<option value="Plain">Plain</option>
 									<option value="Pepperoni">Pepperoni</option>
 									<option value="Pineapple">Pineapple</option>
 								</select>
 							</li>
+
+              <li>
+						<label class="description">When is your birthday? </label>
+						<span>
+							<input id="birthday" name="birthday" class="element text" value="" type="date">
+							<label for="birthday"></label>
+						</span>
+
+					</li>
 
 							<li>
 								<label for="password">Hello is the secret password?</label>

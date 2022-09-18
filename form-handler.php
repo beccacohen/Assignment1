@@ -14,6 +14,7 @@
     			$raido         = $_POST['radio'];
     			$comments      = $_POST['comments'];
     			$favoritePizza = $_POST['fav-pizza'];
+          $birthday      = $_POST['birthday'];
     			$password      = $_POST['password'];
 
           if($password == "Hello"){
@@ -68,10 +69,23 @@
               echo "<img src='images/pinepizza.gif' alt='Pepperoni Pizza Dancing' />";
     				}
 
-          }else{
-            echo "<h1> Wrong Password!</h1>";
-            echo "<button onclick='history.go(-1);'>Back</button>";
-          }
+            // Birthday
+            $is_b_day = date("m.d") == date("m.d", strtotime($birthday));
+
+            if (!empty($birthday)) {
+              if($is_b_day) {
+                echo "<p> Your birthday is on: $birthday</p>";
+                echo "<p> Happy Birthday!</p>";
+              }else {
+                echo "<p> Your Birthday is on: $birthday</p>";
+                echo "<p> Sorry today is not your birthday...</p>";
+              }
+            }
+
+            }else{
+              echo "<h1> Wrong Password!</h1>";
+              echo "<button onclick='history.go(-1);'>Back</button>";
+            }
     			?>
 
   </body>
